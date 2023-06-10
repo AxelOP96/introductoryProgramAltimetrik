@@ -25,10 +25,14 @@ Use match() method to find all the a’s in 30 Days Of JavaScript
 Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'
 Use repeat() method to print 30 Days Of JavaScript 2 times*/
 
-let challenge = '30 Days Of JavaScript';
-console.log(challenge);
-console.log(challenge.length);
-console.log(challenge.toUpperCase())
-console.log(challenge.toLowerCase())
-console.log(challenge.substr(2))
-console.log(challenge.substring(0))
+let challenge = '30 Days Of JavaScript';//1
+console.log(challenge);//2
+console.log(challenge.length);//3
+console.log(challenge.toUpperCase())//4
+console.log(challenge.toLowerCase())//5
+console.log(challenge.substr(2))//6
+console.log(challenge.substring(0, 2))//7
+console.log(challenge.includes("Script"));//8
+console.log(challenge.split());//9
+console.log(challenge.split(" "));//10
+
