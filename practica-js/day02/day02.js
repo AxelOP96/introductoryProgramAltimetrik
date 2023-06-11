@@ -36,3 +36,20 @@ console.log(challenge.includes("Script"));//8
 console.log(challenge.split());//9
 console.log(challenge.split(" "));//10
 
+let word = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon";
+console.log(word.split(" , "));//11
+challenge.replace("JavaScript", "Python");//12
+console.log(challenge.charAt(15));//13
+console.log(challenge.charCodeAt('J'));//14
+console.log(challenge.indexOf('a'));//15
+console.log(challenge.lastIndexOf('a'));//16
+let text = 'You cannot end a sentence with because because because is a conjunction';
+console.log(text.indexOf("because"));//17
+console.log(text.lastIndexOf("because"));//18
+console.log(text.search("because"));//19
+console.log(challenge.trim());
+console.log(challenge.startsWith("30"));
+console.log(challenge.endsWith("JavaScript"));
+console.log(challenge.match("a"));
+console.log("30 days of ".concat("JavaScript"))
+console.log(challenge.repeat(2))
