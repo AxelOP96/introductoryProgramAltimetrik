@@ -24,7 +24,7 @@ Use endsWith() method with the string 30 Days Of JavaScript and make the result 
 Use match() method to find all the a’s in 30 Days Of JavaScript
 Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'
 Use repeat() method to print 30 Days Of JavaScript 2 times*/
-
+//level one
 let challenge = '30 Days Of JavaScript';//1
 console.log(challenge);//2
 console.log(challenge.length);//3
@@ -47,9 +47,68 @@ let text = 'You cannot end a sentence with because because because is a conjunct
 console.log(text.indexOf("because"));//17
 console.log(text.lastIndexOf("because"));//18
 console.log(text.search("because"));//19
-console.log(challenge.trim());
-console.log(challenge.startsWith("30"));
-console.log(challenge.endsWith("JavaScript"));
-console.log(challenge.match("a"));
-console.log("30 days of ".concat("JavaScript"))
-console.log(challenge.repeat(2))
+console.log(challenge.trim());//20
+console.log(challenge.startsWith("30"));//21
+console.log(challenge.endsWith("JavaScript"));//22
+console.log(challenge.match("a"));//23
+console.log("30 days of ".concat("JavaScript"))//24
+console.log(challenge.repeat(2))//25
+
+//level two
+/*Using console.log() print out the following statement:
+
+The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.
+Using console.log() print out the following quote by Mother Teresa:
+
+"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
+
+Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
+
+Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
+
+Check if 'on' is found in both python and jargon
+
+I hope this course is not full of jargon. Check if jargon is in the sentence.
+
+Generate a random number between 0 and 100 inclusively.
+
+Generate a random number between 50 and 100 inclusively.
+
+Generate a random number between 0 and 255 inclusively.
+
+Access the 'JavaScript' string characters using a random number.
+
+Use console.log() and escape characters to print the following pattern.
+
+1 1 1 1 1
+2 1 2 4 8
+3 1 3 9 27
+4 1 4 16 64
+5 1 5 25 125
+Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction'*/ 
+
+console.log("The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another."); //1
+console.log("Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead.");//2
+let ten = '10';
+console.log(typeof(ten));
+console.log(ten==='10');//3
+console.log(parseFloat('9.8'));
+console.log('9.8' ===10);//4
+let text1 = 'python';
+let text2 = 'jargon'
+console.log(text1.match('on'));
+console.log(text2.match('on'));//5
+console.log("I hope this course is not full of jargon.".includes("jargon"));//6
+console.log(Math.floor(Math.random()*101));//7
+
+console.log(Math.floor(Math.random()*256));//9
+let number = Math.floor(Math.random()*10);
+let letra = "JavaScript"[number];
+console.log(letra);//10
+console.log("1\t1\t1\t1\t1\n2\t1\t2\t4\t8\n3\t1\t3\t9\t27\n4\t1\t4\t16\t64\n5\t1\t5\t25\t125");//11
+console.log("You cannot end a sentence with because because because is a conjunction".substr(30,24));//12
+
+
+
+
+
